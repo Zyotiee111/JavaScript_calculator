@@ -18,6 +18,7 @@
 
   <table>
     <!-- first row to have result display and clear result  -->
+    <tbody>
     <tr>
       <td colspan="4"><input type="text" id="result" /></td>
       <!-- clearResult() function will clear result textbox -->
@@ -57,7 +58,7 @@
     </tr>
 
     <tr>
-        <td><input type="button"  value="x^2" onClick="square()"> </td>  
+        <td><input type="button"  value="sq" onClick="square()"> </td>  
       <td><input type="button" value="sin" onclick="sin()" /> </td>
       <td><input type="button" value="cos" onclick="cos()" /> </td>
       <td><input type="button" value="tan" onclick="tan()" /> </td>
@@ -67,13 +68,14 @@
   
     <!-- last row  -->
     <tr>
-        <td><input type="button" value="x^3" onClick="cube()" ></td> 
+        <td><input type="button" value="cube" onClick="cube()" ></td> 
         <td colspan="2"><input type="button" value="back" onclick="back()" style="margin-left: 50px ; width: 50%;"/> </td>
   
       <!-- solve() will evaluate value and display to result -->
       <td colspan="2"><input type="button" value="ans" onclick="solve()"style="margin-left: 50px ; width: 50%" /> </td>
   
     </tr>
+  </tbody>
   </table>
         <!-- JavaScript -->
         <script src="javascript.js"></script>

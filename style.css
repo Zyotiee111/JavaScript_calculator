@@ -6,30 +6,27 @@ table {
     margin: auto;
     border-collapse: collapse;
     border-radius: 5px;
-    border: 1px solid #eee;
-    }
+    border: 2px solid #fff;
+    background-color: #ccc;
+}
 
 table tr:first-child {
     border-bottom: 1px solid #eee;
-      }
-    tr{
-        padding: 10px;
-    }
+      }   
 td, th {
-    border: 1px solid #eee;
+    border: 1px solid #ccc;
     text-align: left;
-     padding: 5px;
+     padding: 1px;
       }
 input[type="button"] {
   background-color: #eee;
   color: #111;
   border-radius: 5px;
-  width: 55px;
+  width: 45px;
   height: 25px;
-  font-size: 20px;
-  box-shadow: 0 5px rgba(0,0,0,0.2);
+  font-size: 15px;
+  box-shadow: "0px 15px 30px rgba(181, 173, 243, 0.5)";
   margin: 10px;
-  border: 1px solid #eee;
 
 }
 input[type="button"]:focus {
@@ -45,9 +42,14 @@ input[type="text"] {
     border-radius: 5px;
     text-align: right;
     height: 40px;
-    border: 1px solid #ccc;
     margin-left: 10px;
+    box-shadow: "0px 15px 30px rgba(181, 173, 243, 0.5)";
+ 
   }
+  input[type="text" i] {
+    padding: 5px;
+    margin: 10px;
+}
   @media (prefers-color-scheme: light) {
     body {
       background-color: white;
@@ -56,7 +58,7 @@ input[type="text"] {
   }
   @media (prefers-color-scheme: dark) {
     body {
-      background-color: black;
+      background-color: #2D3436;
       color: white;
     }
   }
@@ -69,10 +71,29 @@ input[type="text"] {
   }
   body.dark-theme {
     color: #fff;
-    background: black;
+    background: #2D3436;
   }
-  body.dark-theme input[type="button"] {
-    box-shadow: 0 5px rgba(255,255,255,0.8);
+  body.dark-theme table{
+    background: #2D3436;
+
   }
+  body.dark-theme td, th {
+    border: 1px solid #2D3436;
+  }
+  body.dark-theme input[type="button"]{
+    color:black;
+    background-color: #2D3436;
+    color: #fff;
+  }
+  body.dark-theme button{
+    background-color: #2D3436;
+    color: #fff;
+  }
+
+  body.dark-theme input[type="text"]{
+    background-color: #2D3436;
+    color: #fff;
+  }
+  
 
 
