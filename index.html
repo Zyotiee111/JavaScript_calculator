@@ -1,85 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calculator</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- Title -->
-    <h1>Simple Calculator</h1>
-    <div class="text-center mb-4">
-      <button class="toggle-mode">Dark Mode</button>
-    </div>
 
-    <!-- Calculator -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Title -->
+  <h1>Simple Calculator</h1>
+  <div class="text-center mb-4">
+    <button class="toggle-mode">Dark Mode</button>
+  </div>
+
+  <!-- Calculator -->
 
   <table>
     <!-- first row to have result display and clear result  -->
     <tbody>
-    <tr>
-      <td colspan="4"><input type="text" id="result" /></td>
-      <!-- clearResult() function will clear result textbox -->
-      <td><input type="button" value="c" onclick="clearResult()" /></td>
-    </tr>
-  
-    <!-- 2nd, 3rd,4th, 5th and 6th rows -->
-    <tr>
-      <!-- displayValue("1") will be called -->
-      <td><input type="button" value="exp" onClick="exp()"> </td>
-      <td><input type="button" value="1" onclick="displayValue('1')" /> </td>
-      <td><input type="button" value="2" onclick="displayValue('2')" /> </td>
-      <td><input type="button" value="3" onclick="displayValue('3')" /> </td>
-      <td><input type="button" value="/" onclick="displayValue('/')" /> </td>
-    </tr>
-    <tr>
+      <tr>
+        <td colspan="4"><input type="text" id="result" /></td>
+        <!-- clearResult() function will clear result textbox -->
+        <td><input type="button" value="c" onclick="clearResult()" /></td>
+      </tr>
+
+      <!-- 2nd, 3rd,4th, 5th and 6th rows -->
+      <tr>
+        <!-- displayValue("1") will be called -->
+        <td><input type="button" value="exp" onClick="exp()"> </td>
+        <td><input type="button" value="1" onclick="displayValue('1')" /> </td>
+        <td><input type="button" value="2" onclick="displayValue('2')" /> </td>
+        <td><input type="button" value="3" onclick="displayValue('3')" /> </td>
+        <td><input type="button" value="/" onclick="displayValue('/')" /> </td>
+      </tr>
+      <tr>
         <td><input type="button" value="ln" onClick="ln()"> </td>
-      <td><input type="button" value="4" onclick="displayValue('4')" /> </td>
-      <td><input type="button" value="5" onclick="displayValue('5')" /> </td>
-      <td><input type="button" value="6" onclick="displayValue('6')" /> </td>
-      <td><input type="button" value="*" onclick="displayValue('*')" /> </td>
-    </tr>
-    <tr>
-        <td><input type="button" value="sqrt" onClick="sqrt()"> </td>  
-      <td><input type="button" value="7" onclick="displayValue('7')" /> </td>
-      <td><input type="button" value="8" onclick="displayValue('8')" /> </td>
-      <td><input type="button" value="9" onclick="displayValue('9')" /> </td>
-      <td><input type="button" value="+" onclick="displayValue('+')" /> </td>
-    </tr>
+        <td><input type="button" value="4" onclick="displayValue('4')" /> </td>
+        <td><input type="button" value="5" onclick="displayValue('5')" /> </td>
+        <td><input type="button" value="6" onclick="displayValue('6')" /> </td>
+        <td><input type="button" value="*" onclick="displayValue('*')" /> </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="sqrt" onClick="sqrt()"> </td>
+        <td><input type="button" value="7" onclick="displayValue('7')" /> </td>
+        <td><input type="button" value="8" onclick="displayValue('8')" /> </td>
+        <td><input type="button" value="9" onclick="displayValue('9')" /> </td>
+        <td><input type="button" value="+" onclick="displayValue('+')" /> </td>
+      </tr>
 
-    <tr>
-        <td><input type="button" value="cbrt" onClick="cbrt()"></td>  
-      <td><input type="button" value="(" onclick="displayValue('(')" /></td>
-      <td><input type="button" value="0" onclick="displayValue('0')" /> </td>
-      <td><input type="button" value="." onclick="displayValue('.')" /> </td>
-      <td><input type="button" value="-" onclick="displayValue('-')" /> </td>
-    </tr>
+      <tr>
+        <td><input type="button" value="cbrt" onClick="cbrt()"></td>
+        <td><input type="button" value="(" onclick="displayValue('(')" /></td>
+        <td><input type="button" value="0" onclick="displayValue('0')" /> </td>
+        <td><input type="button" value="." onclick="displayValue('.')" /> </td>
+        <td><input type="button" value="-" onclick="displayValue('-')" /> </td>
+      </tr>
 
-    <tr>
-        <td><input type="button"  value="sq" onClick="square()"> </td>  
-      <td><input type="button" value="sin" onclick="sin()" /> </td>
-      <td><input type="button" value="cos" onclick="cos()" /> </td>
-      <td><input type="button" value="tan" onclick="tan()" /> </td>
-      <td><input type="button" value=")" onclick="displayValue(')')" /> </td>
-    </tr>
-    
-  
-    <!-- last row  -->
-    <tr>
-        <td><input type="button" value="cube" onClick="cube()" ></td> 
-        <td colspan="2"><input type="button" value="back" onclick="back()" style="margin-left: 50px ; width: 50%;"/> </td>
-  
-      <!-- solve() will evaluate value and display to result -->
-      <td colspan="2"><input type="button" value="ans" onclick="solve()"style="margin-left: 50px ; width: 50%" /> </td>
-  
-    </tr>
-  </tbody>
+      <tr>
+        <td><input type="button" value="sq" onClick="square()"> </td>
+        <td><input type="button" value="sin" onclick="sin()" /> </td>
+        <td><input type="button" value="cos" onclick="cos()" /> </td>
+        <td><input type="button" value="tan" onclick="tan()" /> </td>
+        <td><input type="button" value=")" onclick="displayValue(')')" /> </td>
+      </tr>
+
+
+      <!-- last row  -->
+      <tr>
+        <td><input type="button" value="cube" onClick="cube()"></td>
+        <td colspan="2"><input type="button" value="back" onclick="back()" style="margin-left: 50px ; width: 50%;" />
+        </td>
+
+        <!-- solve() will evaluate value and display to result -->
+        <td colspan="2"><input type="button" value="ans" onclick="solve()" style="margin-left: 50px ; width: 50%" />
+        </td>
+
+      </tr>
+    </tbody>
   </table>
-        <!-- JavaScript -->
-        <script src="javascript.js"></script>
+  <!-- JavaScript -->
+  <script src="javascript.js"></script>
 
- 
-  </body>
+
+</body>
+
 </html>

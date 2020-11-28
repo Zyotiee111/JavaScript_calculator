@@ -1,23 +1,26 @@
 h1 {
-     text-align: center;
-    }
+  text-align: center;
+}
 
 table {
-    margin: auto;
-    border-collapse: collapse;
-    border-radius: 5px;
-    border: 2px solid #fff;
-    background-color: #ccc;
+  margin: auto;
+  border-collapse: collapse;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  background-color: #ccc;
 }
 
 table tr:first-child {
-    border-bottom: 1px solid #eee;
-      }   
-td, th {
-    border: 1px solid #ccc;
-    text-align: left;
-     padding: 1px;
-      }
+  border-bottom: 1px solid #eee;
+}
+
+td,
+th {
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 1px;
+}
+
 input[type="button"] {
   background-color: #eee;
   color: #111;
@@ -29,71 +32,78 @@ input[type="button"] {
   margin: 10px;
 
 }
+
 input[type="button"]:focus {
-    outline: 0;
-   }
+  outline: 0;
+}
+
 input[type="button"]:hover {
-    background-color: #ccc;
-  }
+  background-color: #ccc;
+}
 
 input[type="text"] {
-    background-color: white;
-    width: 90%;
-    border-radius: 5px;
-    text-align: right;
-    height: 40px;
-    margin-left: 10px;
-    box-shadow: "0px 15px 30px rgba(181, 173, 243, 0.5)";
- 
-  }
-  input[type="text" i] {
-    padding: 5px;
-    margin: 10px;
+  background-color: white;
+  width: 90%;
+  border-radius: 5px;
+  text-align: right;
+  height: 40px;
+  margin-left: 10px;
+  box-shadow: "0px 15px 30px rgba(181, 173, 243, 0.5)";
+
 }
-  @media (prefers-color-scheme: light) {
-    body {
-      background-color: white;
-      color: black;
-    }
-  }
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #2D3436;
-      color: white;
-    }
-  }
 
-  .text-center {
-    text-align: center;
-  }
-  .mb-4 {
-    margin-bottom: 1.5rem;
-  }
-  body.dark-theme {
-    color: #fff;
-    background: #2D3436;
-  }
-  body.dark-theme table{
-    background: #2D3436;
+input[type="text"i] {
+  padding: 5px;
+  margin: 10px;
+}
 
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
   }
-  body.dark-theme td, th {
-    border: 1px solid #2D3436;
-  }
-  body.dark-theme input[type="button"]{
-    color:black;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
     background-color: #2D3436;
-    color: #fff;
+    /* color: white; */
   }
-  body.dark-theme button{
-    background-color: #2D3436;
-    color: #fff;
-  }
+}
 
-  body.dark-theme input[type="text"]{
-    background-color: #2D3436;
-    color: #fff;
-  }
-  
+.text-center {
+  text-align: center;
+}
 
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
 
+body.dark-theme {
+  color: #fff;
+  background: #2D3436;
+}
+
+body.dark-theme table {
+  background: #2D3436;
+
+}
+
+body.dark-theme td,
+th {
+  border: 1px solid #2D3436;
+}
+
+body.dark-theme input[type="button"] {
+  background-color: #2D3436;
+  color: #fff;
+}
+
+body.dark-theme button {
+  background-color: #2D3436;
+  color: #fff;
+}
+
+body.dark-theme input[type="text"] {
+  background-color: #2D3436;
+  color: #fff;
+}
